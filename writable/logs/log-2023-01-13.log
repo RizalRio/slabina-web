@@ -1,0 +1,582 @@
+ERROR - 2023-01-13 21:03:54 --> mysqli_sql_exception: Unknown column 'dataId' in 'order clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t\t\ta.id,...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t\t\ta.id,...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t\t\ta.id,...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT\n\t\t\ta.id,...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('', '0', '10', 'desc', 'dataId')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-13 21:03:54 --> Unknown column 'dataId' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 4 APPPATH\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 5 APPPATH\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('ROOTPATH\\public', '0', '10', 'desc', 'dataId')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-13 21:04:27 --> mysqli_sql_exception: Unknown column 'dataId' in 'order clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t\t\ta.id,...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t\t\ta.id,...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t\t\ta.id,...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT\n\t\t\ta.id,...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('', '0', '10', 'desc', 'dataId')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-13 21:04:27 --> Unknown column 'dataId' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 4 APPPATH\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 5 APPPATH\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('ROOTPATH\\public', '0', '10', 'desc', 'dataId')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-13 21:05:19 --> mysqli_sql_exception: Unknown column 'dataId' in 'order clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t\t\ta.id,...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t\t\ta.id,...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t\t\ta.id,...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT\n\t\t\ta.id,...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('', '0', '10', 'desc', 'dataId')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-13 21:05:19 --> Unknown column 'dataId' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 4 APPPATH\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 5 APPPATH\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('ROOTPATH\\public', '0', '10', 'desc', 'dataId')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-13 21:06:07 --> mysqli_sql_exception: Unknown column 'dataId' in 'order clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t\t\ta.id,...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t\t\ta.id,...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t\t\ta.id,...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT\n\t\t\ta.id,...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('', '0', '10', 'desc', 'dataId')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-13 21:06:07 --> Unknown column 'dataId' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 4 APPPATH\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 5 APPPATH\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('ROOTPATH\\public', '0', '10', 'desc', 'dataId')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-13 21:06:15 --> mysqli_sql_exception: Unknown column 'dataId' in 'order clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t\t\ta.id,...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t\t\ta.id,...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t\t\ta.id,...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT\n\t\t\ta.id,...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('', '0', '10', 'desc', 'dataId')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-13 21:06:15 --> Unknown column 'dataId' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 4 APPPATH\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 5 APPPATH\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('ROOTPATH\\public', '0', '10', 'desc', 'dataId')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-13 21:06:20 --> mysqli_sql_exception: Unknown column 'dataId' in 'order clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t\t\ta.id,...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t\t\ta.id,...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t\t\ta.id,...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT\n\t\t\ta.id,...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('', '0', '10', 'desc', 'dataId')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-13 21:06:20 --> Unknown column 'dataId' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 4 APPPATH\Models\Admin\PenggunaModel.php(76): CodeIgniter\Database\BaseConnection->query('SELECT
+			a.id,
+            a.type_id,
+			a.name,
+            a.image,
+			a.username,
+			a.active
+		FROM
+			admin_user a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+                OR a.username LIKE \'%%\'
+				)
+		ORDER BY
+			dataId desc
+		LIMIT
+			0, 10')
+ 5 APPPATH\Controllers\admin\Pengguna.php(34): App\Models\Admin\PenggunaModel->getTable('ROOTPATH\\public', '0', '10', 'desc', 'dataId')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

@@ -1,0 +1,30 @@
+ERROR - 2023-01-20 18:46:29 --> mysqli_sql_exception: Unknown column 'a.iamge' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\PenggunaModel.php(101): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Pengguna.php(90): App\Models\Admin\PenggunaModel->get_data('2')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Pengguna->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Pengguna))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-20 21:51:17 --> Undefined array key "name"
+in APPPATH\Views\admin\partials\sidebar.php on line 17.
+ 1 APPPATH\Views\admin\partials\sidebar.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\admin\\partials\\sidebar.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\partials\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/partials/sidebar', null, true)
+ 5 APPPATH\Views\admin\core.php(18): CodeIgniter\View\View->include('admin/partials/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\core.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/core', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\admin\Dashboard.php(16): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\Dashboard->index()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

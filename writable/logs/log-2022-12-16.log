@@ -1,0 +1,17 @@
+CRITICAL - 2022-12-16 21:59:48 --> Undefined variable $breadcrumb
+in APPPATH\Views\admin\partials\header.php on line 10.
+ 1 APPPATH\Views\admin\partials\header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breadcrumb', 'APPPATH\\Views\\admin\\partials\\header.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(431): CodeIgniter\View\View->render('admin/partials/header', null, true)
+ 5 APPPATH\Views\admin\core.php(24): CodeIgniter\View\View->include('admin/partials/header')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\core.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('admin/core', [], true)
+ 9 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/dashboard', [], true)
+10 APPPATH\Controllers\admin\Dashboard.php(15): view('admin/dashboard', [...])
+11 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\admin\Dashboard->index()
+12 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Dashboard))
+13 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

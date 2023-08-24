@@ -1,0 +1,111 @@
+CRITICAL - 2023-01-27 01:26:18 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\admin\Galeri.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Galeri->add()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-27 01:30:31 --> mysqli_sql_exception: Unknown column 'a.logo' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('1')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 01:30:43 --> mysqli_sql_exception: Unknown column 'a.logo' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('1')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 01:31:04 --> mysqli_sql_exception: Unknown column 'a.logo' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('2')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 01:31:19 --> mysqli_sql_exception: Unknown column 'a.logo' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('1')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 01:31:21 --> mysqli_sql_exception: Unknown column 'a.logo' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('2')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 01:31:24 --> mysqli_sql_exception: Unknown column 'a.logo' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('1')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 01:32:38 --> mysqli_sql_exception: Unknown column 'a.images' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(87): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('2')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-27 02:38:39 --> mysqli_sql_exception: Table 'k5525305_slabina.b' doesn't exist in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\GaleriModel.php(91): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Galeri.php(124): App\Models\Admin\GaleriModel->get_data('2')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Galeri->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}

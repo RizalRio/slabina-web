@@ -1,0 +1,13 @@
+ERROR - 2023-01-30 20:58:56 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\AuthModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Auth.php(27): App\Models\Admin\AuthModel->search('rizalrio')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Auth->auth()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Auth))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}

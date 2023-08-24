@@ -1,0 +1,296 @@
+ERROR - 2023-01-25 21:06:45 --> mysqli_sql_exception: Unknown column 'a.deleted' in 'where clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT\n\t       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-25 21:06:45 --> Unknown column 'a.deleted' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 4 APPPATH\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 5 APPPATH\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-25 21:06:58 --> mysqli_sql_exception: Unknown column 'a.deleted' in 'where clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT\n\t       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-25 21:06:58 --> Unknown column 'a.deleted' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 4 APPPATH\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 5 APPPATH\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-25 21:07:06 --> mysqli_sql_exception: Unknown column 'a.deleted' in 'where clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT\n\t       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-25 21:07:06 --> Unknown column 'a.deleted' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 4 APPPATH\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 5 APPPATH\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-25 21:07:13 --> mysqli_sql_exception: Unknown column 'a.deleted' in 'where clause' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT\n\t       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\n\t       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n\t       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT\n\t       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-25 21:07:13 --> Unknown column 'a.deleted' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 4 APPPATH\Models\Admin\TentangModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT
+	        COUNT(*) AS count
+		FROM
+            about a
+		WHERE
+			a.deleted = 0
+			AND (
+			    a.name LIKE \'%%\'
+				)
+        ORDER BY
+			a.id DESC')
+ 5 APPPATH\Controllers\admin\Tentang.php(32): App\Models\Admin\TentangModel->countTable()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Tentang->get()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-01-25 21:24:28 --> mysqli_sql_exception: Unknown column 'a.type_id' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\TentangModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Tentang.php(128): App\Models\Admin\TentangModel->get_data('1')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Tentang->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2023-01-25 21:32:21 --> mysqli_sql_exception: Unknown column 'a.type_id' in 'field list' in C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\slabina-web\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT \n       ...', 0)
+#1 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT \n       ...')
+#2 C:\xampp\htdocs\slabina-web\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT \n       ...')
+#3 C:\xampp\htdocs\slabina-web\app\Models\Admin\TentangModel.php(89): CodeIgniter\Database\BaseConnection->query('SELECT \n       ...')
+#4 C:\xampp\htdocs\slabina-web\app\Controllers\admin\Tentang.php(128): App\Models\Admin\TentangModel->get_data('2')
+#5 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(927): App\Controllers\Admin\Tentang->data()
+#6 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Tentang))
+#7 C:\xampp\htdocs\slabina-web\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\slabina-web\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\slabina-web\system\Commands\Server\rewrite.php(46): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2023-01-25 22:37:40 --> Invalid file: admin/galeri.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/galeri.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/galeri', [], true)
+ 3 APPPATH\Controllers\admin\Galeri.php(16): view('admin/galeri', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Galeri->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Galeri))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
